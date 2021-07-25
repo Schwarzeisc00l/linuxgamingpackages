@@ -77,6 +77,14 @@ if flatpak == "1":
     print("Done!")
 else:
     print("Skipping!")
+    
+
+discord = input(("Would you like to install Discord? [1]Yes [0]No: "))
+if discord == "1":
+    os.system("sudo pacman -S discord")
+    print("Done!")
+else:
+    print("Skipping!")
 
 
 spotify = input(("Would you like to install Spotify? [1]Yes [0]No: "))
