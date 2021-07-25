@@ -107,7 +107,7 @@ else:
 
 discord = input(("Would you like to install Discord? [1] Yes [0]No "))
 if discord == "1":
-    os.system("sudo pacmna -S discord")
+    os.system("sudo pacman -S discord")
     print("Done!")
 else:
     print("Skipping!")
