@@ -25,3 +25,11 @@ Fixed yay
 
 
 ```
+
+# Notes:
+Please run the script as root. If you don't know what it means or how to do it,
+
+```
+sudo su
+```
+Now you are root.
