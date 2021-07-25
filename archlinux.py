@@ -14,7 +14,7 @@ if multilib == "1":
     os.system('''  sudo  echo  "   
 
 [multilib]
-Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf''')
+Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf && sudo pacman -Syu''')
     print("Done!")
 else:
         print("Skipping!")
