@@ -10,3 +10,18 @@ Packages needed are : git python3
  ```
 Then you can do python3 archlinux.py to run.
 This only supports Arch for now.
+
+
+# Changelog:
+```
+Added Discord
+Added multilib support
+Fixed some misspellings.
+Fixed yay
+
+
+
+
+
+
+```
