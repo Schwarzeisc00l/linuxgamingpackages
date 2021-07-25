@@ -1,5 +1,5 @@
 import os
-print("Welcome to Schwarze's Package Installer Sciript.  It will installed the packages for gaming. ")
+print("Welcome to Schwarze's Package Installer Script.  It will installed the packages for gaming. ")
 update = input(("Would you like to update first? [1]Yes [0]No: "))
 if  update == "1":
     os.system("sudo pacman -Syu")
@@ -9,7 +9,7 @@ else:
 
 yay = input(("Would you like to install YAY- Arch User Repository? [1]Yes [0]No: " ))
 if yay == "1":
-    os.system("sudo pacman -S yay")
+    os.system("sudo pacman -S git base-devel && cd /opt  && sudo git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si ")
     print("Done!")
 else:
     print("Skipping!")
