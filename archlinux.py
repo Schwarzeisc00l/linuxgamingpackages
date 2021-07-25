@@ -8,17 +8,17 @@ if  update == "1":
 else:
     print("Skipping!")
 
-    multilib = input(("Would you like to allow multilib to install more apps? Ex: Steam Discord Chromium...? [1]Yes [0]No:  ."))
-    if multilib == "1":
-        print("Warning: Cancelling this command may damage your system")
-        os.system('''  sudo  echo  "   
+multilib = input(("Would you like to allow multilib to install more apps? Ex: Steam Discord Chromium...? [1]Yes [0]No:  ."))
+if multilib == "1":
+    print("Warning: Cancelling this command may damage your system")
+    os.system('''  sudo  echo  "   
 
 [multilib]
 Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf''')
     print("Done!")
-    else:
+else:
         print("Skipping!")
-
+ 
 yay = input(("Would you like to install YAY- Arch User Repository? [1]Yes [0]No: " ))
 if yay == "1":
     os.system("sudo pacman -S git base-devel && cd /opt  && sudo git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si ")
