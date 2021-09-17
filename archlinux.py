@@ -26,6 +26,13 @@ if yay == "1":
 else:
     print("Skipping!")
 
+paru = input(("Would you like to install PARU - Arch User Repository? [1]Yes [0]No: " ))
+if yay == "1":
+    os.system("sudo pacman -S git base-devel && cd /opt  && sudo git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si ")
+    print("Done!")
+else:
+    print("Skipping!")
+
 steam = input(("Would you like to install Steam for gaming? [1]Yes [0]No: "))
 if steam == "1":
     os.system(" sudo pacman -S steam")
