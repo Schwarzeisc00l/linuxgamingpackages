@@ -1,5 +1,8 @@
 import os
-print("Welcome to Schwarze's Package Installer Script.  It will installed the packages for gaming. ")
+
+print("Welcome to Schwarze's Package Installer Script.  It will install the packages for gaming. ")
+print("Please run the script as root or it might not work properly.")
+
 update = input(("Would you like to update first? [1]Yes [0]No: "))
 if  update == "1":
     os.system("sudo pacman -Syu")
@@ -7,16 +10,27 @@ if  update == "1":
 else:
     print("Skipping!")
 
+multilib = input(("Would you like to allow multilib to install more apps? Ex: Steam Discord Chromium...? [1]Yes [0]No:  ."))
+if multilib == "1":
+    print("Warning: Cancelling this command may damage your system")
+    os.system('''  sudo  echo  "   
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf && sudo pacman -Syu''')
+    print("Done!")
+else:
+        print("Skipping!")
+ 
 yay = input(("Would you like to install YAY- Arch User Repository? [1]Yes [0]No: " ))
 if yay == "1":
-    os.system("sudo pacman -S yay")
+    os.system("sudo pacman -S git base-devel && cd /opt  && sudo git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si ")
     print("Done!")
 else:
     print("Skipping!")
 
 steam = input(("Would you like to install Steam for gaming? [1]Yes [0]No: "))
 if steam == "1":
-    os.system("sudo pacman -S steam")
+    os.system(" sudo pacman -S steam")
     print("Done!")
 else:
     print("Skipping!")
@@ -93,6 +107,13 @@ if optimusmanager == "1":
 else:
     print("Skipping!")
 
+discord = input(("Would you like to install Discord? [1] Yes [0]No "))
+if discord == "1":
+    os.system("sudo pacman -S discord")
+    print("Done!")
+else:
+    print("Skipping!")
+    
 done = input(("That's it. Thanks for using my script. The source can be found on my Github page. Would you like to go now? [1]Yes [0]No: "))
 if done == "1":
     os.system("firefox https://github.com/schwarzeisc00l")
