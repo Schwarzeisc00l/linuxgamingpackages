@@ -27,7 +27,7 @@ else:
     print("Skipping!")
 
 paru = input(("Would you like to install PARU - Arch User Repository? [1]Yes [0]No: " ))
-if yay == "1":
+if paru == "1":
     os.system("sudo pacman -S git base-devel && cd /opt  && sudo git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si ")
     print("Done!")
 else:
