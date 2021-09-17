@@ -1,6 +1,8 @@
 import os
+
 print("Welcome to Schwarze's Package Installer Script.  It will install the packages for gaming. ")
 print("Please run the script as root or it might not work properly.")
+
 update = input(("Would you like to update first? [1]Yes [0]No: "))
 if  update == "1":
     os.system("sudo pacman -Syu")
