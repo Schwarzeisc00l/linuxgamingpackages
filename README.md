@@ -10,11 +10,11 @@ Packages needed are : git python3 python-pip
  git clone https://github.com/Schwarzeisc00l/linuxgamingpackages && cd linuxgamingpackages
  ```
 Then you can do python3 archlinux.py to run.
-## Ubuntu
+## Debian, Ubuntu
 ```
  git clone https://github.com/Schwarzeisc00l/linuxgamingpackages && cd linuxgamingpackages
 ```
-Then you can do python3 ubuntu.py to run.
+Then you can do python3 debian.py to run.
 
 
 
