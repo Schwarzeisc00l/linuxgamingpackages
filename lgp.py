@@ -1,13 +1,10 @@
-#!/usr/bin/env bash
-
 
 
 import os
 import sys
 import distro
-import PySimpleGUI as gui
 
-#if not os.geteuid() == 0:
+if not os.geteuid() == 0:
     #sys.exit("Please run the script as root or it might not work properly.\n")
 
 distroname = distro.id()
