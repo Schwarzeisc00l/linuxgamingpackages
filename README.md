@@ -32,7 +32,8 @@ Then you can do python3 debian.py to run.
 Added Discord
 Added multilib support
 Fixed some misspellings.
-Fixed yay
+Fixed yay on Arch.
+Added multi-distro support.
 
 
 
