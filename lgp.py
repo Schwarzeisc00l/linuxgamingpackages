@@ -1,11 +1,10 @@
 
-
 import os
 import sys
 import distro
 
 if not os.geteuid() == 0:
-    #sys.exit("Please run the script as root or it might not work properly.\n")
+    sys.exit("Please run the script as root or it might not work properly.\n")
 
 distroname = distro.id()
 
