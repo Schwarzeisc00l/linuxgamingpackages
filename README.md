@@ -11,7 +11,7 @@ Packages needed are : git python3 python-pip
 ```
  git clone https://github.com/Schwarzeisc00l/linuxgamingpackages && cd linuxgamingpackages
  ```
- and then python3 lgp.py to run. It detects the distro by itself. If you think some packages are missing or want support for anothr distro, or just found a bug, feel free to contact me.
+ and then python3 lgp.py to run. It detects the distro by itself. If you think some packages are missing or want support for another distro, or just found a bug, feel free to contact me.
 
 
 ## Arch Linux (Legacy)
